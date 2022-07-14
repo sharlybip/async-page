@@ -33,11 +33,10 @@ async function fetchData() {
 						</h3>
 					</div>
 				</div>
-			`)}
+			`).slice(0, 6).join('')}
 		`;
 		content.innerHTML = view;
 	}catch(error){
-		console.log(error);
-		//alert("lo sentimos no se pudieron cargar los videos desde la Api de Yutube");
+		alert("lo sentimos no se pudieron cargar los videos desde la Api de Yutube");
 	}
 })();
