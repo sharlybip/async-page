@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fbf6f0;
+}
+section{
+    max-width: 1240px;
+    
+}
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+nav a{
+    font-family: serif;
+    font-weight: bold;
+    display:inline-block;
+    margin-inline-end: 15px;
+    text-decoration: none;
+    color: #000;
+}
+main{
+    display: flex;;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+main .about{
+    width: 50%;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+main .about h1 span {
+    font-size: 30px;
+    font-family: 'Alfa Slab One', cursive;
+}
+main .about h1 span:nth-child(2) {
+    color: rgb(233, 97, 0);
+}
+#content{
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.videos{
+    margin-inline-end: 20px;
+    
+    margin-block-end: 20px;
+}
+.videos .pics{
+    width:150px;
+    height:100px;
+}
+.videos .pics img{
+    width: 100%;
+    height: 100%;
+}
+.videos .title {
+    width: 150px;
+    height: 50px;
+}
+#content .videos .title h3{
+    width: 100%;
+    height: 150px;
+}
