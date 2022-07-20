@@ -35,6 +35,14 @@ async function fetchData() {
 		`;
 		content.innerHTML = view;
 	}catch(error){
-		alert("lo sentimos no se pudieron cargar los videos desde la Api de Yutube");
+		const sorry = null || document.getElementById('content');
+		let view = () => {
+			return `
+				<h2> Lo sentimos tus  videos no fueron cargados, revisa tu conexión a internet e intentalo de nuevo </h2>	
+			`;
+		}
+		sorry.innerHTML = view();
+
+		
 	}
 })();
